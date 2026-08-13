@@ -1,3 +1,11 @@
+name: Python CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
 jobs:
   build:
     # 這裡使用變數，會自動跑三個獨立的 job
@@ -5,7 +13,7 @@ jobs:
     strategy:
       matrix:
         # 定義您想要測試的作業系統清單
-        os: windows-latest
+        os: [windows-latest]
         # 您甚至可以同時測試多個 Python 版本
         python-version: ['3.10', '3.11']
   
