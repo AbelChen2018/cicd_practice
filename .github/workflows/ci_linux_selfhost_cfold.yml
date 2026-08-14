@@ -15,6 +15,8 @@ jobs:
 
     steps:
     - name: Create Folder
-      run: mkdir abel
+      run: |
+        mkdir abel
+        sleep 300
       with:
         clean: false
