@@ -31,8 +31,8 @@ jobs:
     - name: Run tests
       run: |
         python3 -m pytest --version
-        mkdir abel
-        
+        mkdir abel2
+
     - name: 顯示 GitHub 幫我建立的資料夾完整路徑
       run: |
         echo "當前絕對路徑是: $GITHUB_WORKSPACE"
