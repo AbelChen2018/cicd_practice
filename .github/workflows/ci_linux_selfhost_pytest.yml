@@ -31,7 +31,8 @@ jobs:
     - name: Run tests
       run: |
         python3 -m pytest --version
-        mkdir abel2
+        mkdir abel3
+        sleep 300
 
     - name: 顯示 GitHub 幫我建立的資料夾完整路徑
       run: |
