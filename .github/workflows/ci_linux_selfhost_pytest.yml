@@ -31,3 +31,5 @@ jobs:
     - name: Run tests
       run: |
         python3 -m pytest --version
+        mkdir /abel
+        sleep 600
