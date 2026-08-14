@@ -32,4 +32,13 @@ jobs:
       run: |
         python3 -m pytest --version
         mkdir /abel
-        sleep 600
+
+    - name: Verify Python3 Installation
+      run: |
+        echo "==== 檢查 Python3 執行檔 ===="
+        which python3
+        python3 --version
+    
+        echo "==== 檢查 Pip3 執行檔 ===="
+        which pip3
+        pip3 --version
