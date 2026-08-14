@@ -1,0 +1,14 @@
+name: Test Self-Hosted Runner-on Github web
+
+on:
+  workflow_dispatch: # 讓您可以在 GitHub 網頁上手動點擊執行
+
+jobs:
+  ping-test:
+    runs-on: self-hosted # 👈 關鍵：強制指定用您的自建環境跑
+    steps:
+      - name: Check Connection
+        run: |
+          echo "Hello from my Docker Desktop container!"
+          echo "Current timezone:"
+          date
