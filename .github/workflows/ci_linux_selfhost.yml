@@ -1,4 +1,4 @@
-name: Python CI(selfhost)
+name: Python CI(selfhost_pytest)
 
 on:
   push:
@@ -12,7 +12,6 @@ env:
 
 jobs:
   build:
-    # 這裡使用變數，會自動跑三個獨立的 job
     runs-on: self-hosted
   
     steps:
