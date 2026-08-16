@@ -18,10 +18,11 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
 
-    #- name: Install python3 and pip in docker
-    #  run: |
-    #    apt update
-    #    sudo apt install -y python3 python3-pip
+    - name: Install python3 and pip in docker
+      run: |
+        apt update
+        apt install -y python3-pytest
+
   
     #- name: Install dependencies
     #  run: |
