@@ -31,3 +31,5 @@ jobs:
     - name: Run tests
       run: |
         pytest tests/test_sample.py
+        mkdir abel
+        rm -rf abel
